@@ -1,7 +1,7 @@
 "use client";
 import useSWR from "swr";
 
-const fetcher = (url: any) => fetch(url).then((r) => r.json());
+const fetcher = (url: string) => fetch(url).then((r) => r.json());
 
 export default function BlogPage() {
   const { data, error, isLoading } = useSWR(
